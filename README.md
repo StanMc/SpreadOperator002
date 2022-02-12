@@ -1,2 +1,2 @@
-# SpreadOperator002
+# SpreadOperatorPractice01
 Created with CodeSandbox
