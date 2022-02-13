@@ -13,12 +13,17 @@ function App() {
     setToDoItemList((prevValue) => {
       return [...prevValue, inputText];
     });
+    setInputText("");
   }
 
   function buttonConsoleLogHandler(event) {
     console.log(toDoItemList);
     console.log(inputText);
     event.preventDefault();
+  }
+
+  function showToDoItem(item) {
+    return <li> {item} </li>;
   }
 
   return (
@@ -34,6 +39,7 @@ function App() {
       </div>
       <div>
         <ul>
+          {toDoItemList.map(showToDoItem)}
           <li>A Item </li>
         </ul>
       </div>
